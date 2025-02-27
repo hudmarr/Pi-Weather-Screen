@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Map container takes all available space */
+#map {
+    flex: 1;
+}
+
+/* Weather panel styling */
+#weather-panel {
+    width: 400px;
+    padding: 20px;
+    background: inherit;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#location-name {
+    margin: 0;
+    font-size: 1.5rem; /* Slightly reduced size */
+}
+
+/* Theme toggle button */
+#theme-toggle {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+body.light-mode #theme-toggle {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Date/Time styling (stacked layout) */
+.current-datetime {
+    text-align: center;
+    margin-top: 10px;
+}
+#current-time {
+    font-size: 4rem; /* Increased time display */
+    margin: 0;
+}
+#current-date {
+    font-size: 1.75rem; /* Slightly larger than location text */
+    margin: 0;
+}
+
+/* Weather info row: details on left, temperature on right */
+.weather-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.weather-info-row .details {
+    font-size: 1.5rem; /* Larger text for details */
+}
+
+.weather-info-row .details p {
+    margin: 5px 0;
+}
+
+.temp-block h2 {
+    font-size: 4rem; /* Large temperature display */
+    margin: 0;
+    line-height: 1;
+}
+
+.temp-block p {
+    margin: 0;
+}
+
+/* Chart container for the average temperature graph */
+.chart-container {
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Horizontal forecast icons layout */
+.forecast-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.forecast-icons .forecast-icon-card {
+    flex: 1;
+    text-align: center;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    padding: 8px;
+    min-width: 50px;
+}

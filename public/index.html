@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard - Gainesville, FL</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Include Chart.js for the forecast graph -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="light-mode">
+  <div id="container">
+    <!-- Left: Interactive Map -->
+    <div id="map"></div>
+    
+    <!-- Right: Weather Info Panel -->
+    <div id="weather-panel">
+      <div class="top-row">
+        <h1 id="location-name">Gainesville, FL</h1>
+        <button id="theme-toggle">Dark Mode</button>
+      </div>
+      
+      <!-- Date/Time Display: stacked (time above date) -->
+      <div class="current-datetime">
+        <h3 id="current-time">--:--</h3>
+        <h4 id="current-date">Thu, Feb 13</h4>
+      </div>
+      
+      <!-- Weather info row: details on left, temperature on right -->
+      <div class="weather-info-row">
+        <div class="details">
+          <p id="wind">Wind: -- mph</p>
+          <p id="precip">Precip: --%</p>
+          <p id="sunrise">Sunrise: --:--</p>
+          <p id="sunset">Sunset: --:--</p>
+        </div>
+        <div class="temp-block">
+          <h2 id="current-temp">-- °F</h2>
+          <p id="conditions">Loading...</p>
+        </div>
+      </div>
+      
+      <!-- Chart container for the 7-day average temperature graph -->
+      <div class="chart-container">
+         <canvas id="avgTempChart"></canvas>
+      </div>
+      
+      <!-- Horizontal forecast icons (daily weather: day, icon, high/low) -->
+      <div class="forecast-icons" id="forecast-icons"></div>
+    </div>
+  </div>
+  
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
