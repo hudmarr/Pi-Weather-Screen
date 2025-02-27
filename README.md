@@ -1,8 +1,8 @@
 # Pi-Weather-Screen
 
-![Dark Mode Weather Dashboard](pics/Screenshot%202025-02-24%20152829.png)
-
 Raspberry Pi home screen that shows real-time precipitation radar, weather forecasts, and time in a sleek, modern interface. Features both dark and light modes, with a clean design.
+
+![Dark Mode Weather Dashboard](pics/Screenshot%202025-02-24%20152829.png)
 
 ## Project Purpose
 
