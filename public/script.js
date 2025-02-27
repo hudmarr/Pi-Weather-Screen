@@ -7,7 +7,6 @@ const API_KEY = '<enter in api key here>';
 
 const DATA_FIELD = 'precipitationIntensity';
 
-
 // Enter you actual longitude and latitude (This is to Gainesville, FL)
 const longitude = -82.3418;
 const latitude = 29.6541;

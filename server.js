@@ -6,28 +6,17 @@ const { exec } = require('child_process');
 
 const app = express();
 
-// Environment variables
 const TOMORROW_IO_API_KEY = process.env.TOMORROW_IO_API_KEY;
-const MAPBOX_ACCESS_TOKEN = process.env.MAPBOX_ACCESS_TOKEN;
 const PORT = process.env.PORT || 3000;
 
 // Serve static files from the public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Config endpoint to expose necessary API keys to the frontend
-app.get('/api/config', (req, res) => {
-  // Only expose what the frontend needs
-  res.json({
-    mapboxToken: MAPBOX_ACCESS_TOKEN,
-    tomorrowIoApiKey: TOMORROW_IO_API_KEY
-  });
-});
-
 // API endpoint to fetch weather data from Tomorrow.io (defaults to Gainesville, FL)
 app.get('/api/weather', async (req, res) => {
   try {
-    const lat = req.query.lat || '29.6516';
-    const lon = req.query.lon || '-82.3248';
+    const lat = req.query.lat || '29.6541';
+    const lon = req.query.lon || '-82.3418';
     const url = `https://api.tomorrow.io/v4/timelines?location=${lat},${lon}&fields=temperature,windSpeed,precipitationProbability,humidity,sunriseTime,sunsetTime,weatherCode,temperatureMax,temperatureMin&timesteps=1d,current&units=imperial&apikey=${TOMORROW_IO_API_KEY}`;
 
     const response = await fetch(url);
