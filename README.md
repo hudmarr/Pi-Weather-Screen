@@ -1,4 +1,4 @@
-# Pi-Screensaver
+# Pi-Weather-Screen
 Raspberry Pi home screen that includes radar, weather, and time
 
 
