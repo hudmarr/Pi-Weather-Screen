@@ -1,20 +1,20 @@
 # Pi-Weather-Screen
 
-![Dark Mode Weather Dashboard](pics/Screenshot 2025-02-24 152829.png)
+![Dark Mode Weather Dashboard](pics/Screenshot%202025-02-24%20152829.png)
 
-Raspberry Pi home screen that shows real-time precipitation radar, weather forecasts, and time in a sleek, modern interface. Features both dark and light modes, with a clean design optimized for wall-mounted displays.
+Raspberry Pi home screen that shows real-time precipitation radar, weather forecasts, and time in a sleek, modern interface. Features both dark and light modes, with a clean design.
 
 ## Project Purpose
 
 This project was created as the first step in building a larger AI system. I needed a sleek, visually appealing home screen that would serve as the central interface for the entire system. The weather dashboard combines interactive maps with essential weather data in a visually pleasing way.
 
-The Pi-Weather-Screen is designed to be a constantly-running display that provides at-a-glance weather information and serves as the foundation for additional modules and AI features that will be added in future iterations.
+The Pi-Weather-Screen is designed to be a constantly-running display that provides at-a-glance weather information and serves as the foundation for additional modules and AI features that will be added in future iterations. The AI features will be added to a different repository and I have no plans in updating this one unless the system stops working.
 
 ## Motivation
 
 While researching similar projects online, I found that many existing weather dashboards for Raspberry Pi either looked outdated, didn't work as advertised, or required significant modifications to get functioning properly. Instead of struggling with incomplete solutions, I decided to build my own from scratch.
 
-This project focuses on reliability, clean aesthetics, and a smooth user experience. It leverages modern web technologies that run efficiently on the Raspberry Pi while providing a responsive interface that looks really sexy.
+This project focuses on reliability, clean aesthetics, and a smooth user experience. It leverages modern web technologies that run efficiently on the Raspberry Pi while providing a responsive interface that just looks really sexy. I can't take full credit for this project as I was assisted by a variety of AI tools and even developed my own AI agent in the process of building this system.
 
 ## Features
 
@@ -25,7 +25,7 @@ This project focuses on reliability, clean aesthetics, and a smooth user experie
 - **Responsive design** that works well on various screen sizes
 - **Dark and light mode** toggle for different ambient lighting conditions
 
-![Light Mode Weather Dashboard](pics/Screenshot 2025-02-24 002700.png)
+![Light Mode Weather Dashboard](pics/Screenshot%202025-02-24%20002700.png)
 
 ## Setup Requirements
 
@@ -190,6 +190,3 @@ The application should now be running, and your browser should automatically ope
 
 Both the weather data and the precipitation radar map automatically refresh every hour to ensure you have up-to-date information.
 
-## Collaboration
-
-This project was developed with the assistance of Claude, an AI assistant from Anthropic. Claude helped with code development, debugging, and creating this README.
